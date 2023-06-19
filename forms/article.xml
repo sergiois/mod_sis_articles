@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<field
+		name="article"
+		type="sql"
+		layout="joomla.form.field.list-fancy-select"
+		label="MOD_SIS_ARTICLES_FIELD_ARTICLE_LABEL"
+		description="MOD_SIS_ARTICLES_FIELD_ARTICLE_DESC"
+		query="SELECT a.id AS id, concat(a.title, ' (CAT: ', c.title, ' - ID: ', a.id, ')') AS title FROM #__content AS a LEFT JOIN #__categories AS c ON c.id = a.catid WHERE a.state = 1"
+		key_field="id"
+		value_field="title"
+    />
+</form>
