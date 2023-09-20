@@ -15,6 +15,12 @@ Articles Joomla in Bootstrap card format.
 ### Version 1.0.0 [2023-06-07]
 * **[Added]** Integration with Bootstrap Framework (version: 5)
 
+### Version 1.0.1 [2023-09-20]
+* **[Added]** French language (thanks to Daniel Dubois)
+* **[Added]** Articles order
+* **[Added]** Image lazy loading
+* **[Changed]** Render image
+
 * * *
 
 ## Copyright & License

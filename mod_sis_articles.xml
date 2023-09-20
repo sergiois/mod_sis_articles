@@ -7,7 +7,7 @@
 	<authorUrl>https://sergioiglesias.net</authorUrl>
 	<copyright>Copyright © 2023 - All rights reserved.</copyright>
 	<license>GNU General Public License v2.0</license>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>MOD__P_JOOMLA__SIS_ARTICLES</description>
 	<namespace path="src">Joomla\Module\SISArticles</namespace>
 	<files>
@@ -355,6 +355,8 @@
 		<language tag="en-GB">en-GB/en-GB.mod_sis_articles.ini</language>
 		<language tag="es-ES">es-ES/es-ES.mod_sis_articles.sys.ini</language>
 		<language tag="es-ES">es-ES/es-ES.mod_sis_articles.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_sis_articles.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_sis_articles.ini</language>
 	</languages>
 	<updateservers>
 		<server type="extension" name="Custom Thumbnails">https://sergiois.github.io/sis-articles.xml</server>

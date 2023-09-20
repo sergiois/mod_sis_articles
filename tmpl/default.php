@@ -10,6 +10,7 @@
 
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Layout\LayoutHelper;
 use Joomla\CMS\Uri\Uri;
 use Joomla\CMS\Router\Route;
 
@@ -40,13 +41,19 @@ switch($params->get('count'))
                     $image = $images->image_fulltext;
                     $alt = $images->image_fulltext_alt ? $images->image_fulltext_alt : $item->title;
                 }
+                $layoutAttr = [
+                    'src'      => $image,
+                    'itemprop' => 'image',
+                    'class'    => 'card-img-top',
+                    'alt'      => $alt,
+                ];
                 ?>
                 <?php if($params->get('link_image')): ?>
                     <a href="<?php echo $item->link; ?>" itemprop="url" target="<?php echo $params->get('open_link', '_self'); ?>">
-                        <img class="card-img-top" data-src="<?php echo $image; ?>" src="<?php echo $image; ?>" alt="<?php echo $alt; ?>">
+                        <?php echo LayoutHelper::render('joomla.html.image', $layoutAttr); ?>
                     </a>
                 <?php else: ?>
-                    <img class="card-img-top" data-src="<?php echo $image; ?>" src="<?php echo $image; ?>" alt="<?php echo $alt; ?>">
+                    <?php echo LayoutHelper::render('joomla.html.image', $layoutAttr); ?>
                 <?php endif; ?>
             <?php endif; ?>
             
