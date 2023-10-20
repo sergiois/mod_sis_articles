@@ -7,7 +7,7 @@
 	<authorUrl>https://sergioiglesias.net</authorUrl>
 	<copyright>Copyright © 2023 - All rights reserved.</copyright>
 	<license>GNU General Public License v2.0</license>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>MOD__P_JOOMLA__SIS_ARTICLES</description>
 	<namespace path="src">Joomla\Module\SISArticles</namespace>
 	<files>

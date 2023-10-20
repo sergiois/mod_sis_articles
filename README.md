@@ -21,6 +21,9 @@ Articles Joomla in Bootstrap card format.
 * **[Added]** Image lazy loading
 * **[Changed]** Render image
 
+### Version 1.0.2 [2023-10-20]
+* **[Added]** Minimal changes to adapt to Joomla 5
+
 * * *
 
 ## Copyright & License

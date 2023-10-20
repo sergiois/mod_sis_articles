@@ -11,8 +11,7 @@
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Layout\LayoutHelper;
-use Joomla\CMS\Uri\Uri;
-use Joomla\CMS\Router\Route;
+use Joomla\Component\Content\Site\Helper\RouteHelper;
 
 defined('_JEXEC') or die;
 
@@ -28,7 +27,7 @@ switch($params->get('count'))
 ?>
 <div class="row <?php echo $moduleclass_sfx; ?>">
 <?php foreach ($items as $item) : ?>
-    <?php $item->link = ContentHelperRoute::getArticleRoute($item->id.':'.$item->alias, $item->catid); ?>
+    <?php $item->link = RouteHelper::getArticleRoute($item->id.':'.$item->alias, $item->catid); ?>
     <div class="col-xs-12 col-sm-6 col-md-<?php echo $spanmd; ?> col-lg-<?php echo $spanmd; ?>" itemscope itemtype="https://schema.org/Article">
         <div class="card">
             <?php if($params->get('show_image') != 'off'): ?>
